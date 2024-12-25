@@ -1,0 +1,39 @@
+﻿@model AnketorApp.Models.Anketler
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Areas/YoneticiPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="card mt-4">
+    <div class="card-header">
+        <h3>Anket Ekle</h3>
+    </div>
+    <div class="card-body">
+        @if (ViewBag.HataMesaj != null)
+        {
+            <div class="alert alert-danger"><strong>Hata</strong> @ViewBag.HataMesaj </div>
+        }
+        @if (ViewBag.Basarili != null)
+        {
+            <div class="alert alert-success"><strong>Başarılı</strong> @ViewBag.Basarili </div>
+        }
+        @using (Html.BeginForm())
+        {
+            <div class="col-12 mt-3">
+                <label class="form-label">Anket Adı</label>
+                @Html.EditorFor(x => x.AnketAdi, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="col-12 mt-3">
+                <label class="form-label">Anket Açıklama</label>
+                @Html.EditorFor(x => x.Aciklama, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <div class="col-12 mt-3">
+                <input type="submit" value="Anket ekle" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+    <div class="card-header">
+        <a href="@Url.Action("Index","Anket")" class="btn-link">Anketler listesine Dön</a>
+    </div>
+</div>
+

@@ -21,13 +21,11 @@
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="nav-link px-3 text-white" href="#" >@kullanici</a>
+            <a class="nav-link px-3 text-white" href="#">Çıkış Yap</a>
+        </nav>
        
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <label>@kullanici</label>
-                <a class="nav-link px-3" href="#">Çıkış Yap</a>
-            </div>
-        </div>
     </header>
     <div class="container-fluid">
         <div class="row">
@@ -41,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index","YoneticiAnasayfa")">
+                            <a class="nav-link" href="@Url.Action("Ekle","Anket")">
                                 <span data-feather="home"></span>
                                 Anketler
                             </a>
