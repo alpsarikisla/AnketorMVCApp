@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AnketSistemiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Anketler">
+    <Key>
+      <PropertyRef Name="AnketID" />
+    </Key>
+    <Property Name="AnketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YoneticiID" Type="Int32" />
+    <Property Name="AnketAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="OlusturmaTarihi" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Yoneticiler" Relationship="Self.FK__Anketler__Yoneti__145C0A3F" FromRole="Anketler" ToRole="Yoneticiler" />
+    <NavigationProperty Name="Sorular" Relationship="Self.FK__Sorular__AnketID__182C9B23" FromRole="Anketler" ToRole="Sorular" />
+  </EntityType>
+  <EntityType Name="Cevap">
+    <Key>
+      <PropertyRef Name="CevapID" />
+    </Key>
+    <Property Name="CevapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciID" Type="Int32" />
+    <Property Name="SoruID" Type="Int32" />
+    <Property Name="SecenekID" Type="Int32" />
+    <Property Name="CevapTarihi" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Kullanicilar" Relationship="Self.FK__Cevap__Kullanici__1DE57479" FromRole="Cevap" ToRole="Kullanicilar" />
+    <NavigationProperty Name="Secenekler" Relationship="Self.FK__Cevap__SecenekID__1FCDBCEB" FromRole="Cevap" ToRole="Secenekler" />
+    <NavigationProperty Name="Sorular" Relationship="Self.FK__Cevap__SoruID__1ED998B2" FromRole="Cevap" ToRole="Sorular" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cevap" Relationship="Self.FK__Cevap__Kullanici__1DE57479" FromRole="Kullanicilar" ToRole="Cevap" />
+  </EntityType>
+  <EntityType Name="Secenekler">
+    <Key>
+      <PropertyRef Name="SecenekID" />
+    </Key>
+    <Property Name="SecenekID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SoruID" Type="Int32" />
+    <Property Name="SecenekMetni" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cevap" Relationship="Self.FK__Cevap__SecenekID__1FCDBCEB" FromRole="Secenekler" ToRole="Cevap" />
+    <NavigationProperty Name="Sorular" Relationship="Self.FK__Secenekle__SoruI__1B0907CE" FromRole="Secenekler" ToRole="Sorular" />
+  </EntityType>
+  <EntityType Name="Sorular">
+    <Key>
+      <PropertyRef Name="SoruID" />
+    </Key>
+    <Property Name="SoruID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnketID" Type="Int32" />
+    <Property Name="SoruMetni" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Anketler" Relationship="Self.FK__Sorular__AnketID__182C9B23" FromRole="Sorular" ToRole="Anketler" />
+    <NavigationProperty Name="Cevap" Relationship="Self.FK__Cevap__SoruID__1ED998B2" FromRole="Sorular" ToRole="Cevap" />
+    <NavigationProperty Name="Secenekler" Relationship="Self.FK__Secenekle__SoruI__1B0907CE" FromRole="Sorular" ToRole="Secenekler" />
+  </EntityType>
+  <EntityType Name="Yoneticiler">
+    <Key>
+      <PropertyRef Name="YoneticiID" />
+    </Key>
+    <Property Name="YoneticiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Anketler" Relationship="Self.FK__Anketler__Yoneti__145C0A3F" FromRole="Yoneticiler" ToRole="Anketler" />
+  </EntityType>
+  <Association Name="FK__Anketler__Yoneti__145C0A3F">
+    <End Role="Yoneticiler" Type="Self.Yoneticiler" Multiplicity="0..1" />
+    <End Role="Anketler" Type="Self.Anketler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yoneticiler">
+        <PropertyRef Name="YoneticiID" />
+      </Principal>
+      <Dependent Role="Anketler">
+        <PropertyRef Name="YoneticiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sorular__AnketID__182C9B23">
+    <End Role="Anketler" Type="Self.Anketler" Multiplicity="0..1" />
+    <End Role="Sorular" Type="Self.Sorular" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Anketler">
+        <PropertyRef Name="AnketID" />
+      </Principal>
+      <Dependent Role="Sorular">
+        <PropertyRef Name="AnketID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cevap__Kullanici__1DE57479">
+    <End Role="Kullanicilar" Type="Self.Kullanicilar" Multiplicity="0..1" />
+    <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanicilar">
+        <PropertyRef Name="KullaniciID" />
+      </Principal>
+      <Dependent Role="Cevap">
+        <PropertyRef Name="KullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cevap__SecenekID__1FCDBCEB">
+    <End Role="Secenekler" Type="Self.Secenekler" Multiplicity="0..1" />
+    <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Secenekler">
+        <PropertyRef Name="SecenekID" />
+      </Principal>
+      <Dependent Role="Cevap">
+        <PropertyRef Name="SecenekID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cevap__SoruID__1ED998B2">
+    <End Role="Sorular" Type="Self.Sorular" Multiplicity="0..1" />
+    <End Role="Cevap" Type="Self.Cevap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sorular">
+        <PropertyRef Name="SoruID" />
+      </Principal>
+      <Dependent Role="Cevap">
+        <PropertyRef Name="SoruID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Secenekle__SoruI__1B0907CE">
+    <End Role="Sorular" Type="Self.Sorular" Multiplicity="0..1" />
+    <End Role="Secenekler" Type="Self.Secenekler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sorular">
+        <PropertyRef Name="SoruID" />
+      </Principal>
+      <Dependent Role="Secenekler">
+        <PropertyRef Name="SoruID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AnketSistemiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Anketler" EntityType="Self.Anketler" />
+    <EntitySet Name="Cevap" EntityType="Self.Cevap" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" />
+    <EntitySet Name="Secenekler" EntityType="Self.Secenekler" />
+    <EntitySet Name="Sorular" EntityType="Self.Sorular" />
+    <EntitySet Name="Yoneticiler" EntityType="Self.Yoneticiler" />
+    <AssociationSet Name="FK__Anketler__Yoneti__145C0A3F" Association="Self.FK__Anketler__Yoneti__145C0A3F">
+      <End Role="Yoneticiler" EntitySet="Yoneticiler" />
+      <End Role="Anketler" EntitySet="Anketler" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sorular__AnketID__182C9B23" Association="Self.FK__Sorular__AnketID__182C9B23">
+      <End Role="Anketler" EntitySet="Anketler" />
+      <End Role="Sorular" EntitySet="Sorular" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cevap__Kullanici__1DE57479" Association="Self.FK__Cevap__Kullanici__1DE57479">
+      <End Role="Kullanicilar" EntitySet="Kullanicilar" />
+      <End Role="Cevap" EntitySet="Cevap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cevap__SecenekID__1FCDBCEB" Association="Self.FK__Cevap__SecenekID__1FCDBCEB">
+      <End Role="Secenekler" EntitySet="Secenekler" />
+      <End Role="Cevap" EntitySet="Cevap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cevap__SoruID__1ED998B2" Association="Self.FK__Cevap__SoruID__1ED998B2">
+      <End Role="Sorular" EntitySet="Sorular" />
+      <End Role="Cevap" EntitySet="Cevap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Secenekle__SoruI__1B0907CE" Association="Self.FK__Secenekle__SoruI__1B0907CE">
+      <End Role="Sorular" EntitySet="Sorular" />
+      <End Role="Secenekler" EntitySet="Secenekler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

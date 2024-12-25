@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="offset-4 col-4 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="mb-3 text-center">
+                            <img src="~/Areas/YoneticiPanel/Assets/Resimler/giphy.gif" style="width:256px" />
+                        </div>
+                        <div class="mb-3 text-center">
+                            <h3>Yönetici Giriş</h3>
+                        </div>
+                        if (ViewBag.mesaj != null)
+                        {
+                            <div class="alert alert-danger"><strong>Hata </strong> @ViewBag.mesaj</div>
+                        }
+                        <div class="mb-3">
+                            <label>Mail Adres</label>
+                            <input type="text" name="Email" class="form-control" />
+                        </div>
+                        <div class="mb-5">
+                            <label>Şifre</label>
+                            <input type="password" name="Sifre" class="form-control" />
+                        </div>
+                        <div class="mb-3 d-grid">
+                            <input type="submit" value="Giriş Yap" class="btn btn-primary btn-block" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Assets/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
