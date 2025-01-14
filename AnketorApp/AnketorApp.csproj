@@ -214,6 +214,8 @@
     <Content Include="Areas\YoneticiPanel\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\YoneticiPanel\Views\YoneticiAnasayfa\Index.cshtml" />
     <Content Include="Areas\YoneticiPanel\Views\Anket\Ekle.cshtml" />
+    <Content Include="Areas\YoneticiPanel\Views\Anket\Liste.cshtml" />
+    <Content Include="Areas\YoneticiPanel\Views\Anket\Duzenle.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

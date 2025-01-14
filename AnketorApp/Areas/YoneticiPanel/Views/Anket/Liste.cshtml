@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AnketorApp.Models.Anketler>
+@{
+    ViewBag.Title = "Liste";
+    Layout = "~/Areas/YoneticiPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="card mt-3">
+    <div class="card-header">
+        <h3 class="float-start">Anketler</h3>
+        <a href="@Url.Action("Ekle","Anket")" class="btn btn-primary float-end">Anket Ekle</a>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Isim</th>
+                    <th>Açıklama</th>
+                    <th>Oluşturan</th>
+                    <th>Oluşturma Tarihi</th>
+                    <th>Seçenekler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (AnketorApp.Models.Anketler item in Model)
+                {
+                    <tr>
+                        <td>@item.AnketID</td>
+                        <td>@item.AnketAdi</td>
+                        <td>@item.Aciklama</td>
+                        <td>@item.Yoneticiler.Ad @item.Yoneticiler.Soyad</td>
+                        @{string tarih = Convert.ToDateTime(item.OlusturmaTarihi).ToShortDateString();}
+                        <td>
+                            @tarih
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Duzenle","Anket", new {id = item.AnketID})" class="btn btn-sm btn-primary">Düzenle</a>
+                            <a href="" class="btn btn-sm btn-danger">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

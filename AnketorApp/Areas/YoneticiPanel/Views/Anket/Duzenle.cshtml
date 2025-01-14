@@ -1,12 +1,14 @@
 ﻿@model AnketorApp.Models.Anketler
+
 @{
-    ViewBag.Title = "Ekle";
+    ViewBag.Title = "Duzenle";
     Layout = "~/Areas/YoneticiPanel/Views/Shared/_LayoutPage1.cshtml";
 }
 
+
 <div class="card mt-4">
     <div class="card-header">
-        <h3>Anket Ekle</h3>
+        <h3>Anket Düzenle</h3>
     </div>
     <div class="card-body">
         @if (ViewBag.HataMesaj != null)
@@ -19,6 +21,9 @@
         }
         @using (Html.BeginForm())
         {
+            @Html.HiddenFor(x=> x.AnketID)
+            @Html.HiddenFor(x=> x.OlusturmaTarihi)
+            @Html.HiddenFor(x=> x.YoneticiID)
             <div class="col-12 mt-3">
                 <label class="form-label">Anket Adı</label>
                 @Html.EditorFor(x => x.AnketAdi, new { htmlAttributes = new { @class = "form-control" } })
@@ -28,7 +33,7 @@
                 @Html.EditorFor(x => x.Aciklama, new { htmlAttributes = new { @class = "form-control" } })
             </div>
             <div class="col-12 mt-3">
-                <input type="submit" value="Anket ekle" class="btn btn-primary" />
+                <input type="submit" value="Anket Düzenle" class="btn btn-primary" />
             </div>
         }
     </div>
@@ -36,4 +41,6 @@
         <a href="@Url.Action("Liste","Anket")" class="btn-link">Anketler listesine Dön</a>
     </div>
 </div>
+
+
 
