@@ -76,5 +76,25 @@ namespace AnketorApp.Areas.YoneticiPanel.Controllers
             }
             return View(model);
         }
+
+        public ActionResult Sil(int? id)
+        {
+            if (id != null)
+            {
+                int soruSayi = db.Sorular.Count(s => s.AnketID == id);
+                if (soruSayi == 0)
+                {
+                    Anketler a = db.Anketler.Find(id);
+                    db.Anketler.Remove(a);
+                    db.SaveChanges();
+                    TempData["Basarili"] = "Anket silme işlemi başarılı";
+                }
+                else
+                {
+                    TempData["Mesaj"] = "Bu anket üzerine eklenmiş soru bulunduğu için silme işlemi gerçekleştirilemez";
+                }
+            }
+            return RedirectToAction("Liste", "Anket");
+        }
     }
 }
