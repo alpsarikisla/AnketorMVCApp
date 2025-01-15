@@ -39,7 +39,6 @@ namespace AnketorApp.Areas.YoneticiPanel.Controllers
                 {
                     ViewBag.HataMesaj = "Anket eklenirken hata oluştu"; 
                 }
-                
             }
             return View(model);
         }

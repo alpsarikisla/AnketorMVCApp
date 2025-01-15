@@ -44,6 +44,7 @@
                             @tarih
                         </td>
                         <td>
+                            <a href="@Url.Action("AnketIleIndex","Soru", new {id = item.AnketID})" class="btn btn-sm btn-info">Soru Yönetimi</a>
                             <a href="@Url.Action("Duzenle","Anket", new {id = item.AnketID})" class="btn btn-sm btn-primary">Düzenle</a>
                             <a href="@Url.Action("Sil", "Anket", new{id = item.AnketID})" class="btn btn-sm btn-danger">Sil</a>
                         </td>

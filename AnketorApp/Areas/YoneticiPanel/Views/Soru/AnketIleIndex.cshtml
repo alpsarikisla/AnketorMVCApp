@@ -1,0 +1,64 @@
+﻿@using AnketorApp.Models
+@model IEnumerable<AnketorApp.Models.Sorular>
+@{
+    ViewBag.Title = "AnketIleIndex";
+    Layout = "~/Areas/YoneticiPanel/Views/Shared/_LayoutPage1.cshtml";
+    Anketler anket = ViewBag.anket as Anketler;
+}
+<div class="card mt-4">
+    <div class="card-header bg-gradient bg-info text-white">
+        <h3>Anket bilgisi</h3>
+    </div>
+    <div class="card-body">
+        <div class="col-md-12">
+            <strong>Anket Adı = </strong>@anket.AnketAdi
+        </div>
+        <div class="col-md-12">
+            <strong>Oluşturan =  </strong>@anket.Yoneticiler.Ad @anket.Yoneticiler.Soyad
+        </div>
+        <div class="col-md-12">
+            <strong>Oluşturma Tarihi =  </strong>@anket.OlusturmaTarihi
+        </div>
+        <div class="col-md-12">
+            <strong>Açıklama = </strong> @anket.Aciklama
+        </div>
+
+    </div>
+</div>
+
+<div class="card mt-3">
+    <div class="card-header">
+        <h3 class="float-start">Anket Soruları</h3>
+        <a href="@Url.Action("Ekle","Soru")" class="btn btn-primary float-end">Soru Ekle</a>
+    </div>
+    <div class="card-body">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Soru ID</th>
+                    <th>Soru Metni</th>
+                    <th>Seçenekler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Sorular item in Model)
+                {
+                    <tr>
+                        <td>@item.SoruID</td>
+                        <td>@item.SoruMetni</td>
+                       
+                        <td>
+                            <a href="@Url.Action("AnketIleIndex","Soru", new {id = item.AnketID})" class="btn btn-sm btn-info">Soru Yönetimi</a>
+                            <a href="@Url.Action("Duzenle","Anket", new {id = item.AnketID})" class="btn btn-sm btn-primary">Düzenle</a>
+                            <a href="@Url.Action("Sil", "Anket", new{id = item.AnketID})" class="btn btn-sm btn-danger">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

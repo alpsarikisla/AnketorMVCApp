@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|c:\\users\\alp\\documents\\github\\anketormvcapp\\anketorapp\\areas\\yoneticipanel\\views\\anket\\liste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\anketorapp\\areas\\yoneticipanel\\views\\anket\\liste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\views\\anket\\liste.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|c:\\users\\alp\\documents\\github\\anketormvcapp\\anketorapp\\areas\\yoneticipanel\\views\\soru\\anketileindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\views\\soru\\anketileindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|c:\\users\\alp\\documents\\github\\anketormvcapp\\anketorapp\\areas\\yoneticipanel\\controllers\\anketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\controllers\\anketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|c:\\users\\alp\\documents\\github\\anketormvcapp\\anketorapp\\areas\\yoneticipanel\\views\\soru\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\views\\soru\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|c:\\users\\alp\\documents\\github\\anketormvcapp\\anketorapp\\areas\\yoneticipanel\\controllers\\sorucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\controllers\\sorucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\anketorapp\\areas\\yoneticipanel\\filters\\giriskontrolattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\filters\\giriskontrolattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\anketorapp\\areas\\yoneticipanel\\controllers\\anketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|solutionrelative:anketorapp\\areas\\yoneticipanel\\controllers\\anketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AF64DDE-A351-4DA9-AF43-D7B5DA04547C}|AnketorApp\\AnketorApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\anketorapp\\areas\\yoneticipanel\\controllers\\yoneticianasayfacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 150,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,7 +73,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "AnketIleIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\AnketIleIndex.cshtml",
+              "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\AnketIleIndex.cshtml",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\AnketIleIndex.cshtml",
+              "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\AnketIleIndex.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T14:50:59.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\Index.cshtml",
+              "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\Index.cshtml",
+              "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Soru\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T14:28:54.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoruController.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Controllers\\SoruController.cs",
+              "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\SoruController.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Controllers\\SoruController.cs",
+              "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\SoruController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T14:25:31.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Duzenle.cshtml",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Duzenle.cshtml",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Duzenle.cshtml",
@@ -69,8 +120,7 @@
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Duzenle.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T15:11:08.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T15:11:08.008Z"
             },
             {
               "$type": "Document",
@@ -80,14 +130,14 @@
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Liste.cshtml",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Liste.cshtml",
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Anket\\Liste.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-07T14:42:07.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "_LayoutPage1.cshtml",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\Shared\\_LayoutPage1.cshtml",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\Shared\\_LayoutPage1.cshtml",
@@ -105,14 +155,14 @@
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\AnketController.cs",
               "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Controllers\\AnketController.cs",
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\AnketController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwDYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T15:21:55.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GirisKontrolAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Filters\\GirisKontrolAttribute.cs",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Filters\\GirisKontrolAttribute.cs",
@@ -120,12 +170,11 @@
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Filters\\GirisKontrolAttribute.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T15:04:06.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T15:04:06.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\YoneticiAnasayfa\\Index.cshtml",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\YoneticiAnasayfa\\Index.cshtml",
@@ -137,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "YoneticiAnasayfaController.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiAnasayfaController.cs",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiAnasayfaController.cs",
@@ -145,12 +194,11 @@
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiAnasayfaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:47:01.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T14:47:01.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\303\\Downloads\\bootstrap-5.0.2-examples\\dashboard\\index.html",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\303\\Downloads\\bootstrap-5.0.2-examples\\dashboard\\index.html",
@@ -162,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Views\\YoneticiGiris\\Index.cshtml",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Views\\YoneticiGiris\\Index.cshtml",
@@ -170,12 +218,11 @@
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Views\\YoneticiGiris\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T14:51:33.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T14:51:33.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "YoneticiGirisController.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiGirisController.cs",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiGirisController.cs",
@@ -183,12 +230,11 @@
               "RelativeToolTip": "AnketorApp\\Areas\\YoneticiPanel\\Controllers\\YoneticiGirisController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T14:51:01.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T14:51:01.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "YoneticiPanelAreaRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\AnketorMVCApp\\AnketorApp\\Areas\\YoneticiPanel\\YoneticiPanelAreaRegistration.cs",
               "RelativeDocumentMoniker": "AnketorApp\\Areas\\YoneticiPanel\\YoneticiPanelAreaRegistration.cs",

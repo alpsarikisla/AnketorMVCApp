@@ -136,6 +136,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\YoneticiPanel\Controllers\AnketController.cs" />
+    <Compile Include="Areas\YoneticiPanel\Controllers\SoruController.cs" />
     <Compile Include="Areas\YoneticiPanel\Controllers\YoneticiAnasayfaController.cs" />
     <Compile Include="Areas\YoneticiPanel\Controllers\YoneticiGirisController.cs" />
     <Compile Include="Areas\YoneticiPanel\Filters\GirisKontrolAttribute.cs" />
@@ -216,6 +217,8 @@
     <Content Include="Areas\YoneticiPanel\Views\Anket\Ekle.cshtml" />
     <Content Include="Areas\YoneticiPanel\Views\Anket\Liste.cshtml" />
     <Content Include="Areas\YoneticiPanel\Views\Anket\Duzenle.cshtml" />
+    <Content Include="Areas\YoneticiPanel\Views\Soru\AnketIleIndex.cshtml" />
+    <Content Include="Areas\YoneticiPanel\Views\Soru\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
